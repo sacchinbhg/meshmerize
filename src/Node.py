@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Node to solve in the shortest path algorithm 
 class Node():
 

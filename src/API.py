@@ -1,4 +1,7 @@
+#!/usr/bin/env python
 import sys
+import rospy
+from std_msgs.msg import String, Empty
 
 class MouseCrashedError(Exception):
     pass

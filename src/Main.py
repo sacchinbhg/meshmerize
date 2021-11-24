@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import API
 import sys
 import time
