@@ -118,7 +118,6 @@ def floodfill(node,var):
     scan(node)
     node.processed = True
     # API.setColor(*node.pos, "r")
-    API.setText(*node.pos, str(node.pos[0])+","+str(node.pos[1]))
     for i in node.neighbours :
         if not i.processed:
             i.var = var+1
@@ -158,10 +157,7 @@ def main():
         log("Path Found")
         log("Length : "+str(len(path)))
         curr = head
-        API.setText(*curr.pos,'0')
         for ind,i in enumerate(path):
-            API.setText(*curr.pos,str(ind))
-            API.setColor(*curr.pos, 'b')
             apiMove(curr, i)
             curr = i
         log("Reached")
