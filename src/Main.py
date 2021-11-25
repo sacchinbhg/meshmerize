@@ -1,9 +1,9 @@
 #!/usr/bin/env python
+from Node import Node
 import API
 import sys
 import time
 import pickle
-from Node import Node
 from BFS import Grapher
 
 def log(string):
@@ -131,6 +131,7 @@ def floodfill(node,var):
                 i.isEnd = True
 
 def main():
+    print("Starting")
     global mappings
     head = Node(0,0)
     head.var = 0

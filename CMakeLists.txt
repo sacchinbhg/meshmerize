@@ -202,5 +202,9 @@ include_directories(
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
 
+catkin_install_python(PROGRAMS src/Main.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
